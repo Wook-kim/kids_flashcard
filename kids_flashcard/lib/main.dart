@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/flashcard_screen.dart';
 
 void main() {
   runApp(const KidsFlashcardApp());
@@ -13,10 +13,12 @@ class KidsFlashcardApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kids Flashcards',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: 'ComicSans',
       ),
-      home: const HomeScreen(),
+      home: const FlashcardScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
